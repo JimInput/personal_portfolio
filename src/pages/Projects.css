@@ -60,7 +60,7 @@
   position: relative;
 }
 
-.project-card:hover {
+.project-card:has(.hoverable-element:hover) {
   transform: translateY(-10px);
   box-shadow: 0 20px 40px rgba(44, 82, 130, 0.15);
 }
@@ -78,7 +78,7 @@
   transition: transform 0.3s ease;
 }
 
-.project-card:hover .project-image img {
+.project-card:has(.hoverable-element:hover) .project-image img {
   transform: scale(1.05);
 }
 
@@ -96,7 +96,7 @@
   transition: all 0.3s ease;
 }
 
-.project-card:hover .project-overlay {
+.project-card:has(.hoverable-element:hover) .project-overlay {
   opacity: 1;
 }
 

@@ -144,7 +144,7 @@ function Projects() {
         <div className="projects-grid">
           {filteredProjects.map(project => (
             <div key={project.id} className="project-card">
-              <div className="project-image">
+              <div className="project-image hoverable-element">
                 <img src={project.image} alt={project.title} />
                 <div className="project-overlay">
                   <div className="project-links">
@@ -164,7 +164,7 @@ function Projects() {
               
               <div className="project-content">
                 <div className="project-header">
-                  <h3 className="project-title">{project.title}</h3>
+                  <h3 className="project-title hoverable-element">{project.title}</h3>
                   <span className={`project-status ${getStatusClass(project.status)}`}>
                     {getStatusLabel(project.status)}
                   </span>

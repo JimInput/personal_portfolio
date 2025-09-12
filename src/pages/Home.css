@@ -68,7 +68,15 @@
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  padding-left: 20px;
+  padding-left: 0px;
+}
+
+.mobile-only {
+  display: none;
+}
+
+.desktop-only {
+  display: flex;
 }
 
 .placeholder-image {
@@ -225,11 +233,22 @@
   
   .hero-title {
     font-size: 2.8rem;
+    margin-bottom: 30px;
+  }
+  
+  .mobile-only {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0 30px 0;
+  }
+  
+  .desktop-only {
+    display: none;
   }
   
   .placeholder-image {
-    width: 250px;
-    height: 250px;
+    width: 200px;
+    height: 200px;
   }
 }
 

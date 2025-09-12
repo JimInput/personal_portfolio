@@ -8,29 +8,36 @@ function Home() {
     <div className="home">
       <section className="hero">
         <div className="hero-content">
-          <h1 className="hero-title">
-            Hello, I'm <span className="highlight">Jimmy</span>
-          </h1>
-          <p className="hero-subtitle">
-            Computer Science & Mechanical Engineering Student | UConn Honors Program
-          </p>
-          <p className="hero-description">
-            Welcome to my portfolio. I'm a dual-degree student at UConn with a 4.0 GPA, 
-            passionate about robotics, dynamical control systems, and creating innovative 
-            engineering solutions that bridge the gap between software and hardware.
-          </p>
-          <div className="hero-actions">
-            <Link to="/projects" className="btn btn-primary">
-              View My Work
-            </Link>
-            <Link to="/contact" className="btn btn-outline">
-              Get In Touch
-            </Link>
+          <div className="hero-text-content">
+            <h1 className="hero-title">
+              Hello, I'm <span className="highlight">Jimmy</span>
+            </h1>
+            <div className="hero-image mobile-only">
+              <div className="placeholder-image">
+                <img src={photo} alt="Jimmy" className="profile-photo"/>
+              </div>
+            </div>
+            <p className="hero-subtitle">
+              Computer Science & Mechanical Engineering Student | UConn Honors Program
+            </p>
+            <p className="hero-description">
+              Welcome to my portfolio. I'm a dual-degree student at UConn with a 4.0 GPA, 
+              passionate about robotics, dynamical control systems, and creating innovative 
+              engineering solutions that bridge the gap between software and hardware.
+            </p>
+            <div className="hero-actions">
+              <Link to="/projects" className="btn btn-primary">
+                View My Work
+              </Link>
+              <Link to="/contact" className="btn btn-outline">
+                Get In Touch
+              </Link>
+            </div>
           </div>
-        </div>
-        <div className="hero-image">
-          <div className="placeholder-image">
-            <img src={photo} alt="Jimmy" className="profile-photo"/>
+          <div className="hero-image desktop-only">
+            <div className="placeholder-image">
+              <img src={photo} alt="Jimmy" className="profile-photo"/>
+            </div>
           </div>
         </div>
       </section>
