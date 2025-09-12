@@ -1,34 +1,7 @@
-import React, { useState } from 'react';
+import React from 'react';
 import './Contact.css';
 
 function Contact() {
-  const [formData, setFormData] = useState({
-    name: '',
-    email: '',
-    subject: '',
-    message: ''
-  });
-
-  const [formStatus, setFormStatus] = useState('');
-
-  const handleInputChange = (e) => {
-    const { name, value } = e.target;
-    setFormData(prev => ({
-      ...prev,
-      [name]: value
-    }));
-  };
-
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    // Here you would typically handle form submission
-    // For now, we'll just show a success message
-    setFormStatus('success');
-    setTimeout(() => {
-      setFormStatus('');
-      setFormData({ name: '', email: '', subject: '', message: '' });
-    }, 3000);
-  };
 
   const socialLinks = [
     {
@@ -84,75 +57,6 @@ function Contact() {
         </p>
 
         <div className="contact-content">
-          <div className="contact-form-section">
-            <h2 className="section-subtitle">Send Me a Message</h2>
-            
-            {formStatus === 'success' && (
-              <div className="form-success">
-                <p>✅ Thank you! Your message has been sent successfully. I'll get back to you soon.</p>
-              </div>
-            )}
-            
-            <form className="contact-form" onSubmit={handleSubmit}>
-              <div className="form-row">
-                <div className="form-group">
-                  <label htmlFor="name">Full Name *</label>
-                  <input
-                    type="text"
-                    id="name"
-                    name="name"
-                    value={formData.name}
-                    onChange={handleInputChange}
-                    required
-                    placeholder="Your full name"
-                  />
-                </div>
-                <div className="form-group">
-                  <label htmlFor="email">Email Address *</label>
-                  <input
-                    type="email"
-                    id="email"
-                    name="email"
-                    value={formData.email}
-                    onChange={handleInputChange}
-                    required
-                    placeholder="your.email@example.com"
-                  />
-                </div>
-              </div>
-              
-              <div className="form-group">
-                <label htmlFor="subject">Subject *</label>
-                <input
-                  type="text"
-                  id="subject"
-                  name="subject"
-                  value={formData.subject}
-                  onChange={handleInputChange}
-                  required
-                  placeholder="What's this about?"
-                />
-              </div>
-              
-              <div className="form-group">
-                <label htmlFor="message">Message *</label>
-                <textarea
-                  id="message"
-                  name="message"
-                  value={formData.message}
-                  onChange={handleInputChange}
-                  required
-                  rows="6"
-                  placeholder="Tell me more about your project or just say hello..."
-                ></textarea>
-              </div>
-              
-              <button type="submit" className="btn btn-primary submit-btn">
-                Send Message
-              </button>
-            </form>
-          </div>
-
           <div className="contact-info-section">
             <h2 className="section-subtitle">Contact Information</h2>
             
@@ -169,8 +73,8 @@ function Contact() {
             </div>
 
             <div className="availability-note">
-              <h3>Response Time</h3>
-              <p>I typically respond to messages within 24-48 hours. For urgent matters, please mention it in your subject line.</p>
+              <h3>Let's Connect</h3>
+              <p>I'm always interested in research opportunities, internships, and collaborative engineering projects. Feel free to reach out through any of the channels above or connect with me on social media!</p>
             </div>
           </div>
         </div>
