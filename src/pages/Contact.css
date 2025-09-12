@@ -1,0 +1,354 @@
+.contact {
+  background-color: var(--light-grey);
+  min-height: 100vh;
+}
+
+.contact-intro {
+  text-align: center;
+  color: var(--dark-grey);
+  font-size: 1.1rem;
+  line-height: 1.6;
+  max-width: 800px;
+  margin: 0 auto 60px;
+}
+
+.contact-content {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 60px;
+  margin-bottom: 80px;
+}
+
+.contact-form-section,
+.contact-info-section {
+  background-color: var(--white);
+  padding: 40px;
+  border-radius: 16px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+  border: 1px solid var(--medium-grey);
+}
+
+.form-success {
+  background-color: rgba(56, 178, 172, 0.1);
+  border: 1px solid var(--accent-aqua);
+  border-radius: 8px;
+  padding: 15px;
+  margin-bottom: 25px;
+}
+
+.form-success p {
+  color: var(--accent-aqua);
+  margin: 0;
+  font-weight: 500;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.form-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.form-group label {
+  font-weight: 600;
+  color: var(--text-dark);
+  font-size: 0.9rem;
+}
+
+.form-group input,
+.form-group textarea {
+  padding: 14px 16px;
+  border: 2px solid var(--medium-grey);
+  border-radius: 8px;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+  background-color: var(--white);
+  color: var(--text-dark);
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+  outline: none;
+  border-color: var(--primary-blue);
+  box-shadow: 0 0 0 3px rgba(44, 82, 130, 0.1);
+}
+
+.form-group textarea {
+  resize: vertical;
+  min-height: 120px;
+  font-family: inherit;
+}
+
+.submit-btn {
+  align-self: flex-start;
+  padding: 16px 32px;
+  font-size: 1.1rem;
+  margin-top: 10px;
+}
+
+.contact-details {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  margin-bottom: 40px;
+}
+
+.contact-detail {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.contact-icon {
+  font-size: 1.5rem;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--light-grey);
+  border-radius: 10px;
+  flex-shrink: 0;
+}
+
+.contact-text {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.contact-label {
+  font-weight: 600;
+  color: var(--primary-blue);
+  font-size: 0.9rem;
+}
+
+.contact-value {
+  color: var(--dark-grey);
+  font-size: 0.95rem;
+}
+
+.availability-note {
+  background-color: var(--light-grey);
+  padding: 20px;
+  border-radius: 12px;
+  border-left: 4px solid var(--accent-aqua);
+}
+
+.availability-note h3 {
+  color: var(--primary-blue);
+  font-size: 1.1rem;
+  margin-bottom: 10px;
+}
+
+.availability-note p {
+  color: var(--dark-grey);
+  margin: 0;
+  line-height: 1.5;
+}
+
+.social-section {
+  background-color: var(--white);
+  padding: 60px 40px;
+  border-radius: 16px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+  border: 1px solid var(--medium-grey);
+  margin-bottom: 60px;
+}
+
+.social-intro {
+  text-align: center;
+  color: var(--dark-grey);
+  font-size: 1rem;
+  line-height: 1.6;
+  max-width: 600px;
+  margin: 0 auto 40px;
+}
+
+.social-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 25px;
+}
+
+.social-card {
+  background-color: var(--white);
+  border: 2px solid var(--medium-grey);
+  border-radius: 12px;
+  padding: 25px;
+  text-decoration: none;
+  color: var(--text-dark);
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.social-card:hover {
+  transform: translateY(-5px);
+  border-color: var(--primary-blue);
+  box-shadow: 0 8px 25px rgba(44, 82, 130, 0.1);
+}
+
+.social-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: linear-gradient(90deg, var(--primary-blue), var(--accent-aqua));
+  transform: scaleX(0);
+  transition: transform 0.3s ease;
+}
+
+.social-card:hover::before {
+  transform: scaleX(1);
+}
+
+.social-icon {
+  font-size: 2.5rem;
+  margin-bottom: 15px;
+  display: block;
+}
+
+.social-name {
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: var(--primary-blue);
+  margin-bottom: 10px;
+}
+
+.social-description {
+  color: var(--dark-grey);
+  line-height: 1.5;
+  margin-bottom: 15px;
+  font-size: 0.95rem;
+}
+
+.social-arrow {
+  font-size: 1.5rem;
+  color: var(--accent-aqua);
+  font-weight: 700;
+  transition: transform 0.3s ease;
+  position: absolute;
+  bottom: 20px;
+  right: 25px;
+}
+
+.social-card:hover .social-arrow {
+  transform: translateX(5px);
+}
+
+.cta-section {
+  background: linear-gradient(135deg, var(--primary-blue), var(--accent-aqua));
+  border-radius: 16px;
+  padding: 60px 40px;
+  text-align: center;
+  color: var(--white);
+}
+
+.cta-content h2 {
+  font-size: 2.2rem;
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+
+.cta-content p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  margin-bottom: 35px;
+  opacity: 0.9;
+}
+
+.cta-actions {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.cta-actions .btn {
+  padding: 16px 32px;
+  font-size: 1.1rem;
+}
+
+.cta-actions .btn-outline {
+  border-color: var(--white);
+  color: var(--white);
+}
+
+.cta-actions .btn-outline:hover {
+  background-color: var(--white);
+  color: var(--primary-blue);
+}
+
+@media screen and (max-width: 968px) {
+  .contact-content {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+  
+  .form-row {
+    grid-template-columns: 1fr;
+    gap: 25px;
+  }
+  
+  .social-grid {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .contact-form-section,
+  .contact-info-section,
+  .social-section,
+  .cta-section {
+    padding: 30px 25px;
+  }
+  
+  .contact-details {
+    gap: 20px;
+  }
+  
+  .contact-detail {
+    flex-direction: column;
+    text-align: center;
+    gap: 10px;
+  }
+  
+  .social-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .social-card {
+    text-align: center;
+    padding: 30px 25px;
+  }
+  
+  .social-arrow {
+    position: static;
+    margin-top: 10px;
+  }
+  
+  .cta-actions {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .cta-actions .btn {
+    width: 100%;
+    max-width: 300px;
+  }
+}
