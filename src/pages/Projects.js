@@ -57,7 +57,7 @@ function Projects() {
       longDescription: 'A professional portfolio website showcasing projects, experience, and skills. Built with React and modern web technologies, this site demonstrates proficiency in frontend development while utilizing Claude Code for efficient development workflows and code optimization.',
       technologies: ['React', 'JavaScript', 'CSS3', 'React Router', 'Claude Code', 'Responsive Design'],
       liveUrl: window.location.origin,
-      githubUrl: 'https://github.com/JimInput/personal-portfolio',
+      githubUrl: 'https://github.com/JimInput/personal_portfolio',
       features: [
         'Responsive design for all devices',
         'Interactive project showcase',
