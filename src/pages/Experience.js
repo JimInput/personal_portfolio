@@ -76,7 +76,7 @@ function Experience() {
       school: 'University of Connecticut',
       location: 'Storrs, CT',
       duration: 'Aug 2024 - May 2028',
-      gpa: '4.000/4.0',
+      gpa: '4.000',
       honors: 'UConn Honors Program, Presidential Scholarship for Valedictorians',
       relevant: ['Algorithms', 'Data Structures', 'Computer Architecture', 'Systems Programming', 'Digital Logic', 'Cybersecurity', 'Thermodynamics', 'Dynamics', 'Statics', 'Calculus/Linear Algebra/Differential Equations']
     }

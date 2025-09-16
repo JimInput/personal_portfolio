@@ -9,44 +9,24 @@ function Projects() {
 
   const projects = [
     {
-      id: 3,
-      title: 'MeltyBrain Combat Robot',
+      id: 1,
+      title: 'Self-Balancing Robot',
       category: 'Robotics',
-      image: combatRobotImage,
-      description: 'A competition-grade combat robot designed and built for FROST Robotics team, featuring advanced gyroscope-based control systems.',
-      longDescription: 'Co-designed and built a combat robot as part of a 5-person team using Fusion360 for mechanical design and Arduino for control systems. The robot features precise differential drive control with integrated gyroscope and motor encoders for improved rotational stability and maneuverability during competition scenarios.',
-      technologies: ['Fusion360', 'Arduino', 'C++', 'Gyroscope Integration', 'Motor Control'],
+      image: selfBalancingBotImage,
+      description: 'An autonomous self-balancing robot project showcasing dynamical control systems, sensor fusion, and real-time feedback control.',
+      longDescription: 'Currently developing a self-balancing robot that demonstrates advanced dynamical control theory principles. The project involves implementing PID control algorithms, sensor fusion techniques, and real-time feedback systems to achieve stable autonomous balance. This project combines mechanical engineering principles with embedded systems programming and control theory.',
+      technologies: ['Arduino', 'C++', 'PID Control', 'Gyroscope', 'Accelerometer', '3D Printing', 'Control Theory'],
       liveUrl: null,
-      githubUrl: null,
+      githubUrl: 'https://github.com/JimInput/self_balancing_robot',
       features: [
-        'Gyroscope-based stabilization system',
-        'Precise differential drive control',
-        'Motor encoder feedback integration',
-        'Competition-grade mechanical design',
-        'Improved rotational stability',
-        'Enhanced maneuverability for combat scenarios'
+        'PID control algorithm implementation',
+        'Real-time sensor data fusion',
+        'Gyroscope and accelerometer integration',
+        'Custom mechanical design',
+        'Autonomous balance maintenance',
+        'Real-time feedback control system'
       ],
-      status: 'completed'
-    },
-    {
-      id: 4,
-      title: '6TiSCH Remote Structural Health Monitoring',
-      category: 'Research',
-      image: shmProjectImage,
-      description: 'Research project developing IoT sensor networks for infrastructure monitoring using wireless communication and cloud computing.',
-      longDescription: 'Conducting long-term research on infrastructure monitoring at Connecticut Transportation Institute. Designed and maintained a remote IoT network with AWS backend and 6TiSCH local wireless communication protocol. Contributing to publications on intelligent sensing systems and IoT network architectures.',
-      technologies: ['Arduino', 'Raspberry Pi', 'AWS', '6TiSCH', 'IoT', 'Python', 'Sensor Networks'],
-      liveUrl: null,
-      githubUrl: null,
-      features: [
-        'Real-time sensor data collection',
-        'AWS cloud backend integration',
-        '6TiSCH wireless communication protocol',
-        'Long-term monitoring capabilities',
-        'Intelligent sensing systems',
-        'Research publication contributions'
-      ],
-      status: 'completed'
+      status: 'in-progress'
     },
     {
       id: 2,
@@ -69,24 +49,44 @@ function Projects() {
       status: 'in-progress'
     },
     {
-      id: 1,
-      title: 'Self-Balancing Robot',
-      category: 'Robotics',
-      image: selfBalancingBotImage,
-      description: 'An autonomous self-balancing robot project showcasing dynamical control systems, sensor fusion, and real-time feedback control.',
-      longDescription: 'Currently developing a self-balancing robot that demonstrates advanced dynamical control theory principles. The project involves implementing PID control algorithms, sensor fusion techniques, and real-time feedback systems to achieve stable autonomous balance. This project combines mechanical engineering principles with embedded systems programming and control theory.',
-      technologies: ['Arduino', 'C++', 'PID Control', 'Gyroscope', 'Accelerometer', '3D Printing', 'Control Theory'],
+      id: 4,
+      title: '6TiSCH Remote Structural Health Monitoring',
+      category: 'Research',
+      image: shmProjectImage,
+      description: 'Research project developing IoT sensor networks for infrastructure monitoring using wireless communication and cloud computing.',
+      longDescription: 'Conducting long-term research on infrastructure monitoring at Connecticut Transportation Institute. Designed and maintained a remote IoT network with AWS backend and 6TiSCH local wireless communication protocol. Contributing to publications on intelligent sensing systems and IoT network architectures.',
+      technologies: ['Arduino', 'Raspberry Pi', 'AWS', '6TiSCH', 'IoT', 'Python', 'Sensor Networks'],
       liveUrl: null,
-      githubUrl: 'https://github.com/JimInput/self_balancing_robot',
+      githubUrl: null,
       features: [
-        'PID control algorithm implementation',
-        'Real-time sensor data fusion',
-        'Gyroscope and accelerometer integration',
-        'Custom mechanical design',
-        'Autonomous balance maintenance',
-        'Real-time feedback control system'
+        'Real-time sensor data collection',
+        'AWS cloud backend integration',
+        '6TiSCH wireless communication protocol',
+        'Long-term monitoring capabilities',
+        'Intelligent sensing systems',
+        'Research publication contributions'
       ],
-      status: 'in-progress'
+      status: 'completed'
+    },
+    {
+      id: 3,
+      title: 'MeltyBrain Combat Robot',
+      category: 'Robotics',
+      image: combatRobotImage,
+      description: 'A competition-grade combat robot designed and built for FROST Robotics team, featuring advanced gyroscope-based control systems.',
+      longDescription: 'Co-designed and built a combat robot as part of a 5-person team using Fusion360 for mechanical design and Arduino for control systems. The robot features precise differential drive control with integrated gyroscope and motor encoders for improved rotational stability and maneuverability during competition scenarios.',
+      technologies: ['Fusion360', 'Arduino', 'C++', 'Gyroscope Integration', 'Motor Control'],
+      liveUrl: null,
+      githubUrl: null,
+      features: [
+        'Gyroscope-based stabilization system',
+        'Precise differential drive control',
+        'Motor encoder feedback integration',
+        'Competition-grade mechanical design',
+        'Improved rotational stability',
+        'Enhanced maneuverability for combat scenarios'
+      ],
+      status: 'completed'
     }
   ];
 
