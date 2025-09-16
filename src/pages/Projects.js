@@ -144,30 +144,29 @@ function Projects() {
         <div className="projects-grid">
           {filteredProjects.map(project => (
             <div key={project.id} className="project-card">
-              <div className="project-image hoverable-element">
+              <div className="project-image">
                 <img src={project.image} alt={project.title} />
-                <div className="project-overlay">
-                  <div className="project-links">
-                    {project.liveUrl && (
-                      <a href={project.liveUrl} target="_blank" rel="noopener noreferrer" className="btn btn-secondary">
-                        Live Demo
-                      </a>
-                    )}
-                    {project.githubUrl && (
-                      <a href={project.githubUrl} target="_blank" rel="noopener noreferrer" className="btn btn-outline">
-                        GitHub
-                      </a>
-                    )}
-                  </div>
-                </div>
               </div>
               
               <div className="project-content">
                 <div className="project-header">
-                  <h3 className="project-title hoverable-element">{project.title}</h3>
+                  <h3 className="project-title">{project.title}</h3>
                   <span className={`project-status ${getStatusClass(project.status)}`}>
                     {getStatusLabel(project.status)}
                   </span>
+                </div>
+                
+                <div className="project-links">
+                  {project.liveUrl && (
+                    <a href={project.liveUrl} target="_blank" rel="noopener noreferrer" className="btn btn-secondary">
+                      Live Demo
+                    </a>
+                  )}
+                  {project.githubUrl && (
+                    <a href={project.githubUrl} target="_blank" rel="noopener noreferrer" className="btn btn-outline">
+                      GitHub
+                    </a>
+                  )}
                 </div>
                 
                 <p className="project-description">{project.description}</p>
