@@ -9,7 +9,7 @@ function Projects() {
 
   const projects = [
     {
-      id: 1,
+      id: 3,
       title: 'MeltyBrain Combat Robot',
       category: 'Robotics',
       image: combatRobotImage,
@@ -29,7 +29,7 @@ function Projects() {
       status: 'completed'
     },
     {
-      id: 2,
+      id: 4,
       title: '6TiSCH Remote Structural Health Monitoring',
       category: 'Research',
       image: shmProjectImage,
@@ -49,7 +49,7 @@ function Projects() {
       status: 'completed'
     },
     {
-      id: 3,
+      id: 2,
       title: 'Personal Portfolio Website',
       category: 'Web Development',
       image: 'data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDAwIiBoZWlnaHQ9IjI1MCIgdmlld0JveD0iMCAwIDQwMCAyNTAiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxyZWN0IHdpZHRoPSI0MDAiIGhlaWdodD0iMjUwIiBmaWxsPSJ1cmwoI2dyYWRpZW50KSIvPgo8Y2lyY2xlIGN4PSIzMDAiIGN5PSI2MCIgcj0iNDAiIGZpbGw9InJnYmEoMjU1LDI1NSwyNTUsMC4xKSIvPgo8Y2lyY2xlIGN4PSIxMDAiIGN5PSIxODAiIHI9IjMwIiBmaWxsPSJyZ2JhKDI1NSwyNTUsMjU1LDAuMDUpIi8+CjxyZWN0IHg9IjEwMCIgeT0iMTAwIiB3aWR0aD0iMjAwIiBoZWlnaHQ9IjUwIiByeD0iOCIgZmlsbD0icmdiYSgyNTUsMjU1LDI1NSwwLjEpIi8+CjxyZWN0IHg9IjEyMCIgeT0iMTIwIiB3aWR0aD0iMTYwIiBoZWlnaHQ9IjEwIiByeD0iNSIgZmlsbD0icmdiYSgyNTUsMjU1LDI1NSwwLjMpIi8+CjxyZWN0IHg9IjUwIiB5PSI1MCIgd2lkdGg9IjMwMCIgaGVpZ2h0PSI0IiByeD0iMiIgZmlsbD0icmdiYSgyNTUsMjU1LDI1NSwwLjIpIi8+CjxyZWN0IHg9IjUwIiB5PSI3MCIgd2lkdGg9IjIwMCIgaGVpZ2h0PSI0IiByeD0iMiIgZmlsbD0icmdiYSgyNTUsMjU1LDI1NSwwLjE1KSIvPgo8dGV4dCB4PSIyMDAiIHk9IjIwNSIgZm9udC1mYW1pbHk9IkFyaWFsLCBzYW5zLXNlcmlmIiBmb250LXNpemU9IjE4IiBmb250LXdlaWdodD0iYm9sZCIgZmlsbD0icmdiYSgyNTUsMjU1LDI1NSwwLjgpIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIj5KaW1teSBQYWRpbGxhPC90ZXh0Pgo8dGV4dCB4PSIyMDAiIHk9IjIyNSIgZm9udC1mYW1pbHk9IkFyaWFsLCBzYW5zLXNlcmlmIiBmb250LXNpemU9IjEyIiBmaWxsPSJyZ2JhKDI1NSwyNTUsMjU1LDAuNikiIHRleHQtYW5jaG9yPSJtaWRkbGUiPlBvcnRmb2xpbyBXZWJzaXRlPC90ZXh0Pgo8ZGVmcz4KPHN0eWxlPi5jbGF1ZGUtYnJhbmRpbmd7Zm9udC1mYW1pbHk6QXJpYWwsc2Fucy1zZXJpZjt9PC9zdHlsZT4KPGxpbmVhckdyYWRpZW50IGlkPSJncmFkaWVudCIgeDE9IjAlIiB5MT0iMCUiIHgyPSIxMDAlIiB5Mj0iMTAwJSI+CjxzdG9wIG9mZnNldD0iMCUiIHN0b3AtY29sb3I9IiM2MTM2ZmYiLz4KPHN0b3Agb2Zmc2V0PSI1MCUiIHN0b3AtY29sb3I9IiM0Yzc5ZmYiLz4KPHN0b3Agb2Zmc2V0PSIxMDAlIiBzdG9wLWNvbG9yPSIjNGZiZmZmIi8+CjwvbGluZWFyR3JhZGllbnQ+CjwvZGVmcz4KPC9zdmc+',
@@ -69,7 +69,7 @@ function Projects() {
       status: 'in-progress'
     },
     {
-      id: 4,
+      id: 1,
       title: 'Self-Balancing Robot',
       category: 'Robotics',
       image: selfBalancingBotImage,
